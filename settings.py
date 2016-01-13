@@ -5,7 +5,10 @@
 DEBUG = True
 
 # URL de conexão com o MySQL para acessar os bancos
-CONNECTION_URL = "mysql://root:root@localhost"
+CONNECTIONS = {
+    'origin': 'mysql://root:root@localhost',
+    'destination': 'postgresql+psycopg2://postgres:postgres@localhost/meta_id'
+}
 
 # Lista dos bancos de dados disponíveis para acesso
 DATABASE_NAMES = {
